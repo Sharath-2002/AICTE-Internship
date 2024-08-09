@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showContent('Home')">Home</a></li>
+            <li><a href="#" onclick="showContent('Crop Information')">Crop Information</a></li>
+            <li><a href="#" onclick="showContent('Sell Stock')">Sell Stock</a></li>
+            <li><a href="#" onclick="showContent('Contact us')">Contact us</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            showContent('Home');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
